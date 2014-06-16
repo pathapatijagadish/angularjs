@@ -1,4 +1,9 @@
-@IndexCtrl = ($scope) ->
+@IndexCtrl = ($scope, $location, $http, postData) ->
 
-  $scope.data = 
-    users: [{name: 'jagadish', date_of_birth: '07-12-1989'}, {name: 'mahesh', date_of_birth: '07-12-1989'}]
+  $scope.data = postData.data
+
+  postData.loadPosts()
+
+  $scope.viewPost = (postId) ->
+    $location.url('/post/'+postId)
+
