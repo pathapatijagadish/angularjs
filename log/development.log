@@ -1,22 +1,15 @@
-  [1m[36m (143.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (666.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-Migrating to CreatePosts (20130803203410)
-  [1m[35m (79.2ms)[0m  CREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `contents` text, `author` varchar(255), `post_date` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
-  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
-  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130803203410')
-  [1m[36m (49.0ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
 
 
-Started GET "/" for 127.0.0.1 at 2014-06-12 12:33:17 +0530
+Started GET "/" for 127.0.0.1 at 2014-06-10 18:58:43 +0530
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (64.7ms)
-Completed 500 Internal Server Error in 2713ms
+  Rendered main/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 2285ms
 
 ActionView::Template::Error (require_tree argument must be a directory
-  (in /home/intel-ithub/Downloads/rails-angular-tutorial-master/part-4/app/assets/javascripts/main.js.coffee:7)):
+  (in /home/intel-ithub/Desktop/ROR/rails+angularjs/rails-angular-tutorial-master/part-4/app/assets/javascripts/main.js.coffee:7)):
     3: <head>
     4:   <title>Blog</title>
     5:   <%= stylesheet_link_tag    "application", media: "all" %>
@@ -24,21 +17,21 @@ ActionView::Template::Error (require_tree argument must be a directory
     7:   <%= csrf_meta_tags %>
     8: </head>
     9: <body>
-  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3225142537039156408_21217800'
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__585213107854941151_24822480'
 
 
-  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
-  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.4ms)
-  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (72.8ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.9ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.3ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-06-12 12:33:21 +0530
+Started GET "/" for 127.0.0.1 at 2014-06-10 18:59:05 +0530
 Processing by MainController#index as HTML
   Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 500 Internal Server Error in 18ms
+Completed 500 Internal Server Error in 14ms
 
 ActionView::Template::Error (require_tree argument must be a directory
-  (in /home/intel-ithub/Downloads/rails-angular-tutorial-master/part-4/app/assets/javascripts/main.js.coffee:7)):
+  (in /home/intel-ithub/Desktop/ROR/rails+angularjs/rails-angular-tutorial-master/part-4/app/assets/javascripts/main.js.coffee:7)):
     3: <head>
     4:   <title>Blog</title>
     5:   <%= stylesheet_link_tag    "application", media: "all" %>
@@ -46,1626 +39,3144 @@ ActionView::Template::Error (require_tree argument must be a directory
     7:   <%= csrf_meta_tags %>
     8: </head>
     9: <body>
-  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3225142537039156408_21217800'
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__585213107854941151_24822480'
 
 
-  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
   Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
-  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.7ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 Processing by MainController#index as HTML
   Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 198ms (Views: 196.9ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 194ms (Views: 193.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 
 
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-12 12:34:13 +0530
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-10 18:59:23 +0530
 Processing by PostsController#index as JSON
-  [1m[35mPost Load (1.8ms)[0m  SELECT `posts`.* FROM `posts`
-Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+  [1m[35mPost Load (1.2ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 49ms (Views: 1.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/post" for 127.0.0.1 at 2014-06-10 18:59:42 +0530
+
+ActionController::RoutingError (No route matches [GET] "/post"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.2ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (30.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-10 18:59:50 +0530
+Processing by PostsController#index as JSON
   [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
-  [1m[35m (0.2ms)[0m  BEGIN
-  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `posts` (`contents`, `created_at`, `title`, `updated_at`) VALUES ('Ruby on rails', '2014-06-12 07:06:58', 'jagadish', '2014-06-12 07:06:58')[0m
-  [1m[35m (40.2ms)[0m  COMMIT
-  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
-  [1m[35mSQL (0.4ms)[0m  INSERT INTO `posts` (`contents`, `created_at`, `title`, `updated_at`) VALUES ('This is object oriented programming language', '2014-06-12 07:07:52', 'ruby', '2014-06-12 07:07:52')
-  [1m[36m (41.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-10 18:59:59 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.7ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-10 19:00:13 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-10 19:02:48 +0530
+Processing by PostsController#index as JSON
   [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 Processing by MainController#index as HTML
   Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 70ms (Views: 69.6ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:03 +0530
 
 
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-10 19:04:04 +0530
 
 
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-12 12:38:02 +0530
-Processing by PostsController#index as JSON
-  [1m[36mPost Load (3.3ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
-Completed 200 OK in 89ms (Views: 1.9ms | ActiveRecord: 3.6ms)
-
-
-Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-12 12:38:07 +0530
-
-
-Started GET "/" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-12 12:40:59 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:41:00 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-12 12:41:00 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-12 12:41:00 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-12 12:41:00 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-12 12:41:00 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-12 12:41:00 +0530
-Processing by PostsController#index as JSON
-  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts`
-Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms)
-
-
-Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-12 12:42:26 +0530
-
-
-Started GET "/" for 127.0.0.1 at 2014-06-12 12:46:49 +0530
-Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 81ms (Views: 80.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-12 12:46:49 +0530
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-12 12:46:50 +0530
-Processing by PostsController#index as JSON
-  [1m[36mPost Load (0.6ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
-Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-12 12:50:20 +0530
-
-
-Started GET "/" for 127.0.0.1 at 2014-06-16 15:28:54 +0530
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (1.6ms)
-Completed 200 OK in 234ms (Views: 232.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-16 15:28:54 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 15:28:55 +0530
-Processing by PostsController#index as JSON
-  [1m[35mPost Load (2.1ms)[0m  SELECT `posts`.* FROM `posts`
-Completed 200 OK in 94ms (Views: 1.8ms | ActiveRecord: 4.2ms)
-
-
-Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-16 15:28:56 +0530
-
-
-Started GET "/" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (0.8ms)
-Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 15:44:39 +0530
-Processing by PostsController#index as JSON
-  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
-Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 15:45:19 +0530
-Processing by PostsController#index as JSON
-  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
-Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
-
-
-Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-16 15:45:24 +0530
-
-
-Started GET "/" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 15:45:59 +0530
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-10 19:04:04 +0530
 Processing by PostsController#index as JSON
   [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
 Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-10 19:04:08 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-10 19:04:20 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 11:42:03 +0530
+
+Mysql2::Error (Unknown database 'part-3'):
+  mysql2 (0.3.16) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.16) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.0) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2947169877891007004__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (38.8ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 11:43:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 286ms (Views: 284.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 11:43:10 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 28ms (Views: 1.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 11:43:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:00:29 +0530
 Processing by MainController#index as HTML
   Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+Completed 500 Internal Server Error in 300ms
+
+ActionView::Template::Error (SyntaxError: unexpected ]
+  (in /home/intel-ithub/Desktop/ROR/rails+angularjs/asanderson_parts/part-4/app/assets/javascripts/Services/main/postData.js.coffee)):
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application", controller_name %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__1124880778171500116_12601140'
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.3ms)
 
 
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 15:46:43 +0530
-Processing by PostsController#index as JSON
-  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts`
-Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (0.8ms)
-Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
 
 
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 15:46:52 +0530
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:01:06 +0530
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:01:09 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:04:13 +0530
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:04:14 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:36 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:37 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:37 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:37 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:37 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:37 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:37 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:05:37 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:05:37 +0530
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:05:38 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:09:49 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (SyntaxError: unexpected ]
+  (in /home/intel-ithub/Desktop/ROR/rails+angularjs/asanderson_parts/part-4/app/assets/javascripts/Services/main/postData.js.coffee)):
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application", controller_name %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__1124880778171500116_12601140'
+
+
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 100ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:10:19 +0530
 Processing by PostsController#index as JSON
   [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
-Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.4ms)
 
 
-Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-16 15:47:55 +0530
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:10:24 +0530
 
 
-Started GET "/" for 127.0.0.1 at 2014-06-16 19:44:00 +0530
-  [1m[36mActiveRecord::SchemaMigration Load (62.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (27.0ms)
-Completed 200 OK in 501ms (Views: 499.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 19:44:02 +0530
-Processing by PostsController#index as JSON
-  [1m[35mPost Load (21.6ms)[0m  SELECT `posts`.* FROM `posts`
-Completed 200 OK in 86ms (Views: 28.7ms | ActiveRecord: 23.5ms)
-
-
-Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-16 19:44:04 +0530
-
-
-Started GET "/" for 127.0.0.1 at 2014-06-16 19:50:31 +0530
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 644ms (Views: 643.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/css-styles/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/css-styles/docs.css?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/css-styles/prettify.css?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/css-styles/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/application.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/holder.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/widgets.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/js-files/prettify.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/template.js?body=1" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 19:50:32 +0530
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:10:25 +0530
 Processing by PostsController#index as JSON
   [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
-Completed 200 OK in 31ms (Views: 1.8ms | ActiveRecord: 2.1ms)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/css-styles/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/css-styles/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/css-styles/docs.css?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/css-styles/prettify.css?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/application.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/holder.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/prettify.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/js-files/widgets.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:25 +0530
-
-
-Started GET "/assets/template.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:26 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:26 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:26 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:26 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 19:53:26 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 19:53:26 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 19:53:26 +0530
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:10:28 +0530
 Processing by PostsController#index as JSON
-  [1m[36mPost Load (3.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
-Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 3.4ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-06-16 19:54:10 +0530
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 Processing by MainController#index as HTML
-  Rendered main/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 61ms (Views: 60.9ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 19:54:10 +0530
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/css-styles/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-16 19:54:10 +0530
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/css-styles/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-06-16 19:54:10 +0530
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/css-styles/docs.css?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/css-styles/prettify.css?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:52 +0530
 
 
-Started GET "/assets/js-files/application.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:53 +0530
 
 
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:53 +0530
 
 
-Started GET "/assets/js-files/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:11:53 +0530
 
 
-Started GET "/assets/js-files/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:11:53 +0530
 
 
-Started GET "/assets/js-files/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/holder.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/prettify.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/js-files/widgets.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/template.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 19:54:11 +0530
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:11:53 +0530
 Processing by PostsController#index as JSON
   [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
 Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
 
 
-Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-16 19:54:21 +0530
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:11:55 +0530
 
 
-Started GET "/" for 127.0.0.1 at 2014-06-16 19:57:33 +0530
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:57 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:14:58 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:14:59 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:46:00 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:46:01 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:46:04 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:46:06 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:48:07 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:48:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:49:08 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:49:10 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:42 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:42 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:42 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:42 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:49:42 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:49:42 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:49:42 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (2.6ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:49:43 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:50:53 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:50:54 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:50:54 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:50:54 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:51:21 +0530
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:51:22 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:51:22 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:51:23 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:52:26 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:52:27 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:53:30 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:55:47 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:56:15 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:57:01 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:57:03 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:58:23 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 12:58:38 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 12:58:41 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 13:00:25 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 13:00:29 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 13:02:15 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 13:02:16 +0530
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 13:02:20 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 13:13:14 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1648792108879919468__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/intel-ithub/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/intel-ithub/.rvm/gems/ruby-2.0.0-p451@rails400/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreatePosts (20130803203410)
+  [1m[35m (194.2ms)[0m  CREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `contents` text, `author` varchar(255), `post_date` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (26.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130803203410')
+  [1m[36m (30.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-17 13:13:57 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 Processing by MainController#index as HTML
   Rendered main/index.html.erb within layouts/application (1.3ms)
-Completed 200 OK in 382ms (Views: 381.2ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 266ms (Views: 265.1ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/css-styles/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/css-styles/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/css-styles/prettify.css?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/css-styles/docs.css?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/js-files/application.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/js-files/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/js-files/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 
 
-Started GET "/assets/js-files/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/holder.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/prettify.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/js-files/widgets.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/template.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
-
-
-Started GET "/posts.json" for 127.0.0.1 at 2014-06-16 19:57:34 +0530
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 13:13:58 +0530
 Processing by PostsController#index as JSON
-  [1m[35mPost Load (1.0ms)[0m  SELECT `posts`.* FROM `posts`
-Completed 200 OK in 42ms (Views: 1.4ms | ActiveRecord: 3.7ms)
+  [1m[35mPost Load (0.8ms)[0m  SELECT `posts`.* FROM `posts`
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 6.6ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `posts` (`contents`, `created_at`, `title`, `updated_at`) VALUES ('Rails is a web application framework', '2014-06-17 07:46:34', 'Rails', '2014-06-17 07:46:34')
+  [1m[36m (50.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `posts` (`contents`, `created_at`, `title`, `updated_at`) VALUES ('Ruby is a programming language', '2014-06-17 07:46:45', 'Ruby', '2014-06-17 07:46:45')[0m
+  [1m[35m (52.5ms)[0m  COMMIT
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `posts` (`contents`, `created_at`, `title`, `updated_at`) VALUES ('Angularjs is a front-end framework', '2014-06-17 07:49:08', 'AngularJs', '2014-06-17 07:49:08')[0m
+  [1m[35m (53.8ms)[0m  COMMIT
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
 
 
-Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-16 19:57:36 +0530
+Started GET "/" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/Controllers/main/mainIndexCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/Services/main/postData.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/Controllers/main/mainPostCtrl.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/assets/mainIndex.html" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+
+
+Started GET "/posts.json" for 127.0.0.1 at 2014-06-17 13:19:21 +0530
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`[0m
+Completed 200 OK in 32ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mainPost.html" for 127.0.0.1 at 2014-06-17 13:19:25 +0530

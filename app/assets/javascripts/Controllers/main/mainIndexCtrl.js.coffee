@@ -6,4 +6,3 @@
 
   $scope.viewPost = (postId) ->
     $location.url('/post/'+postId)
-

@@ -1,19 +1,12 @@
-<div class="container">
+<nav>
+    <h6 ng-repeat="post in data.posts">
+    	<a ng-click="viewPost($index)">{{post.title}}</a>
+    </h6>
+</nav>
 
-    <div class="row">
-      <div class="span3 bs-docs-sidebar">
-        <ul class="nav nav-list bs-docs-sidenav"  >
-          <li ng-repeat="post in data.posts"> <a ng-click="viewPost(post.id)"></i>{{post.title}}</a></li>
-        </ul>
-      </div>
-      
-      <div class="span9">
-        <h1 class="text-center">My blog</h1>
-        <div class="row" ng-repeat="post in data.posts">
-          <h2><a ng-click="viewPost(post.id)">{{post.title}}</a></h2>
-          <p>{{post.contents}}</p>
-        </div>
-      </div>
-    </div>
+
+<h1 class="text-center">My blog</h1>
+<div class="row" ng-repeat="post in data.posts">
+    <h2><a ng-click="viewPost($index)">{{post.title}}</a></h2>
+    <p>{{post.contents}}</p>
 </div>
-

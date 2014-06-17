@@ -1,4 +1,10 @@
-<h1 class="text-center">{{data.postId}} - {{data.postData.posts[data.postId].title}}</h1>
+<nav>
+    <h6 ng-repeat="post in data.postData.posts">
+    	<a ng-click="viewPost($index)">{{post.title}}</a>
+    </h6>
+</nav>
+
+<h1 class="text-center">{{data.postId }} - {{data.postData.posts[data.postId].title }}</h1>
 <div class="row">
-    <p>{{data.postData.posts[data.postId].contents}}</p>
+    <p>{{data.postData.posts[data.postId].contents }}</p>
 </div>
