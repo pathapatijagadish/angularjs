@@ -9,6 +9,9 @@
   $scope.viewPost = (postId) ->
     $location.url('/post/'+postId)
 
+  $scope.viewPosts=() ->
+  	$location.url('/')
+
   $scope.data.postId = $routeParams.postId
 
 
